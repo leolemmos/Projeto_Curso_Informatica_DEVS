@@ -48,21 +48,9 @@
     <h2>Contribuições</h2>
     <p>
         Sinta-se à vontade para contribuir com melhorias, novas funcionalidades ou correções de bugs. Para isso, faça um fork do repositório,
-        crie uma branch com sua feature ou correção, e envie um pull request.
-    </p>
-    <h2>Autor</h2>
-    <p>
-        Criado por Leonardo Lemos. Este projeto foi desenvolvido como uma ferramenta de aprendizado e base de estudo para aqueles interessados
-        em tecnologia e desenvolvimento web.
-    </p>
-    <h2>Licença</h2>
-    <p>
-        Este projeto está licenciado sob a MIT License. Consulte o arquivo <code>LICENSE</code> para mais informações.
-    </p>
-    <hr>
-    <p>
-        Este modelo de projeto visa fornecer uma base sólida para a criação de sites de cursos profissionalizantes, permitindo que estudantes e
-        profissionais da área de tecnologia possam explorar, modificar e aprender com um exemplo prático e funcional.
-    </p>
+        crie uma branch com sua feature ou correção, e envie um pull request. 
+        Desenvolvido por Leonardo Lemos, este projeto foi desenvolvido como uma ferramenta de aprendizado e base de estudo para aqueles interessados em tecnologia e desenvolvimento web.
+
+   
 </body>
 </html>
