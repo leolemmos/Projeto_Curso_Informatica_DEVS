@@ -1,0 +1,94 @@
+/* Estilos básicos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #004aad, white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contêiner principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Caixa de login */
+.login-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Estilo da logo */
+.logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Título do formulário */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo das labels */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Estilo dos campos de entrada */
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+/* Estilo do botão de submissão */
+button {
+    padding: 10px;
+    background-color: #004aad;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: #3371c2;
+}
+
+/* Estilo dos links */
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    color: #004aad;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
