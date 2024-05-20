@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aluno</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffffff, #87ceeb);
+        }
+        #header {
+            background-color: #1e90ff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: white;
+        }
+        form {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+            margin-top: 50px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .form-group > div {
+            flex: 0 0 calc(33.33% - 10px);
+        }
+        input[type="text"], input[type="password"], select {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            width: calc(100% - 20px);
+        }
+        /* Ajuste de largura para campos específicos */
+        #codigo { width: 200px; }
+        #nome { width: 450px; }
+        #data_nascimento { width: 300px; height: 30px; }
+        #cpf { width: 300px; }
+        #endereco { width: 450px; }
+        #bairro { width: 300px; }
+        #estado { width: 200px; }
+        #cidade { width: 300px; }
+        #cep { width: 300px; }
+        #telefone { width: 200px; }
+        #curso { width: 300px; }
+        #email{ width: 300px; }
+        #periodo_curso { width: 300px; }
+        #data_matricula { width: 300px; height: 30px; }
+        #horario_curso { width: 300px; }
+        #valor_mensalidade { width: 300px; }
+        #data_matricula { width: 300px; height: 30px; }
+        input[type="submit"] {
+            background-color: #1e90ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #187bcd;
+        }
+        /* Estilos para o rodapé */
+        #footer {
+            background-color: #1e90ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <div id="header">
+        <img src="logo_empresa.png" alt="Logo da Empresa">
+        <h1>Cadastro de Alunos</h1>
+    </div>
+    <!-- Formulário -->
+    <form>
+        <!-- Grupo de campos -->
+        <div class="form-group">
+            <div>
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" name="codigo">
+            </div>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div>
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento">
+            </div>
+        </div>
+        <!-- Grupo de campos -->
+        <div class="form-group">
+            <div>
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf">
+            </div>
+            <div>
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco">
+            </div>
+            <div>
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro">
+            </div>
+        </div>
+        <!-- Grupo de campos -->
+        <div class="form-group">
+            <div>
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado">
+            </div>
+            <div>
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade">
+            </div>
+            <div>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep">
+            </div>
+        </div>
+        <!-- Grupo de campos -->
+        <div class="form-group">
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div>
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso">
+                    <option value="Lógica de Programação">Lógica de Programação</option>
+                    <option value="Html">Html</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Banco de Dados">Banco de Dados</option>
+                    <option value="Python">Python</option>
+                    <option value="PHP">PHP</option>
+                </select>
+            </div>
+        </div>
+        <!-- Grupo de campos -->
+        <div class="form-group">
+            <div>
+                <label for="periodo_curso">Período do Curso:</label>
+                <select id="periodo_curso" name="periodo_curso">
+                    <option value="6 Meses">6 Meses</option>
+                    <option value="10 Meses">10 Meses</option>
+                    <option value="12 Meses">12 Meses</option>
+                    <option value="18 Meses">18 Meses</option>
+                    <option value="20 Meses">20 Meses</option>
+                    <option value="24 Meses">24 Meses</option>
+                </select>
+            </div>
+            <div>
+                <label for="horario_curso">Horário do Curso:</label>
+                <select id="horario_curso" name="horario_curso">
+                    <option value="08:00 Horas">08:00 Horas</option>
+                    <option value="10:00 Horas">10:00 Horas</option>
+                    <option value="13:00 Horas">13:00 Horas</option>
+                    <option value="15:00 Horas">15:00 Horas</option>
+                    <option value="17:00 Horas">17:00 Horas</option>
+                    <option value="19:00 Horas">19:00 Horas</option>
+                </select>
+            </div>
+            <div>
+                <label for="valor_mensalidade">Valor da Mensalidade:</label>
+                <select id="valor_mensalidade" name="valor_mensalidade">
+                    <option value="R$ 149,00">R$ 149,00</option>
+                    <option value="R$ 249,00">R$ 249,00</option>
+                    <option value="R$ 349,00">R$ 349,00</option>
+                    <option value="R$ 449,00">R$ 449,00</option>
+                    <option value="R$ 559,00">R$ 559,00</option>
+                </select>
+            </div>
+            <div>
+                <label for="data_matricula">Data de Matrícula:</label>
+                <input type="date" id="data_matricula" name="data_matricula">
+            </div>
+        </div>
+        <!-- Botões de ação -->
+        <input type="submit" value="Novo Cadastro">
+        <input type="submit" value="Excluir Cadastro">
+        <input type="submit" value="Pesquisar">
+        <input type="submit" value="Atualizar Cadastro">
+    </form>
+    <!-- Rodapé -->
+    <div id="footer">
+        <!-- Script para exibir a data e hora em tempo real -->
+        <script>
+            function updateClock() {
+                var now = new Date();
+                var date = now.getDate();
+                var month = now.getMonth() + 1;
+                var year = now.getFullYear();
+                var hours = now.getHours();
+                var minutes = now.getMinutes();
+                var seconds = now.getSeconds();
+
+                // Adiciona zero à esquerda se for menor que 10
+                date = date < 10 ? '0' + date : date;
+                month = month < 10 ? '0' + month : month;
+                hours = hours < 10 ? '0' + hours : hours;
+                minutes = minutes < 10 ? '0' + minutes : minutes;
+                seconds = seconds < 10 ? '0' + seconds : seconds;
+
+                var dateTime = date + '/' + month + '/' + year + ' ' + hours + ':' + minutes + ':' + seconds;
+                document.getElementById('clock').innerHTML = 'Data e Hora do Sistema: ' + dateTime;
+
+                setTimeout(updateClock, 1000); // Atualiza a cada segundo
+            }
+
+            // Inicia a função ao carregar a página
+            window.onload = updateClock;
+        </script>
+        <!-- Container para exibir a data e hora -->
+        <div id="clock"></div>
+        <!-- Informações de contato -->
+        <br>
+        Avenida Santos Dumont, Nº 850 - Aldeota, Fortaleza - Ceará , CEP: 61520-789 - Contato: (85)99856.7854
+    </div>
+</body>
+</html>
